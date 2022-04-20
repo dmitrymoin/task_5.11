@@ -6,29 +6,70 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 400px;
-    background-color: #d0d1d3;
+    justify-content: left;
+    height: 350px;
+    background: url(images/news.jpg) bottom no-repeat;
+    background-size: cover;
+    border-bottom: 4px solid rgba(146, 76, 43, 0.7);
 }
 
 h1 {
-    color: brown;
-    font-size: 4rem;
+    color: rgba(146, 76, 43, 0.7);
+    font-size: 5rem;
+    text-shadow: 2px 1px 1px #000;
     font-family:'Times New Roman', Times, serif;
 }
 
+.news {
+    background-color: rgb(214, 177, 158);
+    padding: 50px 0 32px;
+}
+
+article {
+    width:768px;
+    margin: 0 auto 32px;
+    padding: 6px 15px;
+    border-bottom: 1px solid rgba(146, 76, 43, 0.7);
+}
+
+article a {
+    color: black;
+    text-decoration: none;
+}
+
+article a:hover {
+    color: rgba(146, 76, 43, 0.7);
+}
+
+article h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+}
+
+.article-meta {
+    color: rgb(105,105,105);
+    margin-bottom: 5px;
+}
+
+article img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
 footer {
+    background-color: rgb(214, 177, 158);
     padding-top: 20px;
     padding-bottom: 60px;
     text-align: center;
-}
+   }
 
 footer .links {
     margin-bottom: 50px;
 }
 
 footer .links > a {
-    color: gray;
+    color: rgb(105,105,105);
     padding: 0 25px;
     font-size: 13px;
     font-weight: 600;
@@ -38,6 +79,6 @@ footer .links > a {
 }
 
 .copyright {
-    color: green;
+    color: rgb(105,105,105);
     font-family: 'Times New Roman', Times, serif;
 }
